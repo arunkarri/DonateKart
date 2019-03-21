@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="content" style="margin-top: 25px;">
+    
+      <div class="text-right " style="margin-right: 34px;margin-bottom: 52px;">
+          <div class="btn-group" dropdown>
+              <button id="button-basic" dropdownToggle type="button" class="btn btn-success dropdown-toggle"
+                      aria-controls="dropdown-basic">
+               Currency: <b>{{selected}}</b><span class="caret"></span>
+              </button>
+              <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                  role="menu" aria-labelledby="button-basic">
+                <li role="menuitem"><a class="dropdown-item" href="#" (click)="changeCurrency('INR')" [ngClass]="selected=='INR' ? 'active' :''">INR</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#" (click)="changeCurrency('USD')" [ngClass]="selected=='USD' ? 'active' :''">USD</a></li>
+                
+              </ul>
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-xl-4" *ngFor="let item of products">
+
+        <div class="card text-center cardStyle">
+          <img width="400" height="400" [src]="item.image" class="product">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">Price: {{symbol}}{{item.price}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
