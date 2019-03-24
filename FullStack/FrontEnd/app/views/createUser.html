@@ -1,0 +1,35 @@
+<h1>Create User</h1><br />
+<form>
+  <div ng-if="newUser" class="alert alert-success" role="alert">
+    New User with mail id {{userEmail}} created Succesfully!
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="form-group col-md-4">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" name="name" ng-model="userName">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="form-group col-md-4">
+      <label for="mail">Email</label>
+      <input type="email" class="form-control" name="mail" ng-model="userEmail">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="form-group col-md-4">
+      <label for="phone">Phone Number:</label>
+      <input type="number" class="form-control" name="phone" ng-model="userPhone">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="form-group col-md-4">
+      <button type="submit" class="btn btn-success" ng-click="createUser()">Create</button>
+    </div>
+  </div>
+</form>

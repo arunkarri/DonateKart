@@ -1,0 +1,14 @@
+.card{
+  width: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card img{
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
