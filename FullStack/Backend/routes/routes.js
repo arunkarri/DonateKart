@@ -1,5 +1,3 @@
-const apiConfig = require('../config/api.js');
-
 const emailCtrl = require('../controllers/sendEmailController.js');
 const userCtrl = require('../controllers/createUserController.js');
 
