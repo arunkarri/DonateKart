@@ -11,7 +11,7 @@ emailConfig.prototype.createTransport = function () {
     secure: true,
     auth: {
       user: 'kashyap1049@gmail.com',
-      pass: 'arun2015'
+      pass: 'xxxxx'
     }
   });
   return transporter;
